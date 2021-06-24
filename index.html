@@ -1,0 +1,549 @@
+<!DOCTYPE htms>
+<html lang="pt-BR">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Início | Quitanda</title>
+
+    <link rel="icon" type="image/png" href="assets/img/logo.svg" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- Styles -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- ChartsJS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- GeoCharts -->
+    <script type='text/javascript' src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700&display=swap" rel="stylesheet">
+
+    <!-- Ionic icons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Fontawesome icons -->
+    <script src="https://kit.fontawesome.com/38e3ad135e.js" crossorigin="anonymous"></script>
+
+
+  </head>
+
+  <body>
+
+    <div class="d-flex" id="content-wrapper">
+
+      <!-- Start Sidebar -->
+      <div id="sidebar-container" class="bg-light border-end">
+        <div class="logo mx-auto">
+          <h4 class="font-weight-bold mb-0 text-center">QUITANDA</h4>
+        </div>
+
+        <div class="menu list-group-flush">
+          <h6 href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0 w-80">DASHBOARD
+          </h6>
+          <a href="#" class="list-group-item list-group-item-action text-muted p-3 border-0">
+            <i class="icon ion-md-stats lead me-2"></i> Estatísticas</a>
+          <a href="#" class="list-group-item list-group-item-action text-muted p-3 border-0">
+            <i class="icon ion-md-people lead me-2"></i> Lista de usuários</a>
+
+          <h6 href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">ESTOQUE
+          </h6>
+          <a href="#" class="list-group-item list-group-item-action text-muted p-3 border-0">
+            <i class="icon ion-md-cube lead me-2"></i> Gerenciamento de produtos</a>
+          <a href="#" class="list-group-item list-group-item-action text-muted p-3 border-0">
+            <i class="icon ion-md-cart lead me-2"></i> Produtos </a>
+
+          <h6 href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">VENDAS
+          </h6>
+          <a href="#" class="list-group-item list-group-item-action text-muted p-3 border-0">
+            <i class="icon ion-md-basket lead me-2"></i> Lista de vendas</a>
+
+
+          <h6 href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">CONFIGURAÇÕES
+          </h6>
+          <a href="#" class="list-group-item list-group-item-action text-muted p-3 border-0">
+            <i class="icon ion-md-person lead me-2"></i> Perfil</a>
+
+        </div>
+      </div>
+      <!-- End sidebar -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper" class="w-100 bg-light-blue">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+          <div class="container-fluid">
+            <div id="button-sidebar">
+              <button class="btn btn-primary text-primary" id="menu-toggle"><span
+                  class="navbar-toggler-icon"></span></button>
+            </div>
+
+            <div class="" id="navbarSupportedContent">
+              <ul class="nav ms-auto">
+                <li class="nav-item active">
+                  <a class="nav-link text-dark" href="">Maycon Yamamotto</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link text-dark" href="#">Sair</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div id="content" class="container-fluid p-3">
+          <section class="py-3">
+            <!-- Highlights -->
+            <div class="row">
+              <div class="col-xl-3 col-lg-6">
+                <div class="card mb-4 shadow-sm border-0 shadow-hover">
+                  <div class="card-body d-flex">
+                    <div>
+                      <div class="circle rounded-circle bg-primary align-self-center d-flex me-3">
+                        <i class="icon ion-md-trending-up text-primary align-self-center mx-auto lead"></i>
+                      </div>
+                    </div>
+                    <div class="align-self-center">
+                      <h5 class="mb-0">1.768</h5>
+                      <small class="text-muted">Total de Vendas</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6">
+                <div class="card mb-4 shadow-sm border-0 shadow-hover">
+                  <div class="card-body d-flex">
+                    <div>
+                      <div class="circle rounded-circle bg-primary align-self-center d-flex me-3">
+                        <i class="icon ion-md-stats text-primary align-self-center mx-auto lead"></i>
+                      </div>
+                    </div>
+                    <div class="align-self-center">
+                      <h5 class="mb-0">52</h5>
+                      <small class="text-muted">Números de Produtos</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6">
+                <div class="card mb-4 shadow-sm border-0 shadow-hover">
+                  <div class="card-body d-flex">
+                    <div>
+                      <div class="circle rounded-circle bg-primary align-self-center d-flex me-3">
+                        <i class="icon ion-md-people text-primary align-self-center mx-auto lead"></i>
+                      </div>
+                    </div>
+                    <div class="align-self-center">
+                      <h5 class="mb-0">12</h5>
+                      <small class="text-muted">Itens Estoque Baixo</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-6">
+                <div class="card mb-4 shadow-sm border-0 shadow-hover">
+                  <div class="card-body d-flex">
+                    <div>
+                      <div class="circle rounded-circle bg-primary align-self-center d-flex me-3">
+                        <i class="icon ion-md-cash text-primary align-self-center mx-auto lead"></i>
+                      </div>
+                    </div>
+                    <div class="align-self-center">
+                      <h5 class="mb-0">R$ 128.153,23</h5>
+                      <small class="text-muted">Valor Estoque</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Start Gráficos -->
+
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="card d-inline-block border-0 shadow-sm shadow-hover w-100 me-3 mb-5">
+                  <div class="card-body ">
+                    <h5 class="mb-2">Estados compradores</h5>
+
+                    <div>
+                      <div id="chart_div"></div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="card d-inline-block border-0 shadow-sm shadow-hover w-100 me-3 mb-5">
+                  <div class="card-body">
+                    <h5 class="mb-0">Produtos mais vendidos</h5>
+                    <small class="d-inline-block text-muted mb-2">Janeiro - Dezembro</small>
+
+                    <div>
+                      <canvas id="myChart" style="height: 479px"></canvas>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <!-- End Gráficos -->
+
+            <div class="row mb-3">
+              <!-- table products -->
+              <div class="col-xl-7 col-lg-12">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th colspan="col"><small class="font-weight-bold">ID<small></th>
+                        <th colspan="col"><small class="font-weight-bold">COD PRODUTO<small></th>
+                        <th scope="col"><small class="font-weight-bold">Produto<small></th>
+                        <th scope="col"><small class="font-weight-bold">Categoria<small></th>
+                        <th scope="col"><small class="font-weight-bold">Status<small></th>
+                        <th scope="col"><small class="font-weight-bold">Ações<small></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="shadow-sm">
+                        <td class="align-middle">1</td>
+                        <td class="align-middle">17384</td>
+                        <td class="align-middle">Caderno</td>
+                        <td class="align-middle">Papelaria</td>
+                        <td class="align-middle"><span class="badge badge-primary text-primary">EM ESTOQUE</span></td>
+                        <td class="align-middle">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-secondary d-flex align-items-center"
+                              id="btn-action" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fas fa-ellipsis-h me-1"></i>
+                              Ações
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Editar</a></li>
+                              <li><a class="dropdown-item" href="#">Arquivar</a></li>
+                              <li><a class="dropdown-item" href="#">Deletar</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="shadow-sm">
+                        <td class="align-middle">2</td>
+                        <td class="align-middle">17345</td>
+                        <td class="align-middle">Lápis</td>
+                        <td class="align-middle">Papelaria</td>
+                        <td class="align-middle"><span class="badge badge-warning text-warning">ESTOQUE BAIXO</span>
+                        </td>
+                        <td class="align-middle">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-secondary d-flex align-items-center"
+                              id="btn-action" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fas fa-ellipsis-h me-1"></i>
+                              Ações
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Editar</a></li>
+                              <li><a class="dropdown-item" href="#">Arquivar</a></li>
+                              <li><a class="dropdown-item" href="#">Deletar</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="shadow-sm">
+                        <td class="align-middle">3</td>
+                        <td class="align-middle">17356</td>
+                        <td class="align-middle">Caneta</td>
+                        <td class="align-middle">Papelaria</td>
+                        <td class="align-middle"><span class="badge badge-danger text-danger">ESGOTADO</span></td>
+                        <td class="align-middle">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-secondary d-flex align-items-center"
+                              id="btn-action" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fas fa-ellipsis-h me-1"></i>
+                              Ações
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Editar</a></li>
+                              <li><a class="dropdown-item" href="#">Arquivar</a></li>
+                              <li><a class="dropdown-item" href="#">Deletar</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="shadow-sm">
+                        <td class="align-middle">4</td>
+                        <td class="align-middle">17334</td>
+                        <td class="align-middle">Bloco adesivo</td>
+                        <td class="align-middle">Papelaria</td>
+                        <td class="align-middle"><span class="badge badge-primary text-primary">EM ESTOQUE</span></td>
+                        <td class="align-middle">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-secondary d-flex align-items-center"
+                              id="btn-action" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fas fa-ellipsis-h me-1"></i> Ações
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Editar</a></li>
+                              <li><a class="dropdown-item" href="#">Arquivar</a></li>
+                              <li><a class="dropdown-item" href="#">Deletar</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="shadow-sm">
+                        <td class="align-middle">5</td>
+                        <td class="align-middle">17342</td>
+                        <td class="align-middle">Estojo</td>
+                        <td class="align-middle">Papelaria</td>
+                        <td class="align-middle"><span class="badge badge-danger text-danger">ESGOTADO</span></td>
+                        <td class="align-middle">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-secondary d-flex align-items-center"
+                              id="btn-action" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fas fa-ellipsis-h me-1"></i> Ações
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Editar</a></li>
+                              <li><a class="dropdown-item" href="#">Arquivar</a></li>
+                              <li><a class="dropdown-item" href="#">Deletar</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="shadow-sm">
+                        <td class="align-middle">6</td>
+                        <td class="align-middle">17351</td>
+                        <td class="align-middle">Papel Sulfite 75g </td>
+                        <td class="align-middle">Papelaria</td>
+                        <td class="align-middle"><span class="badge badge-warning text-warning">ESTOQUE BAIXO</span>
+                        </td>
+                        <td class="align-middle">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-secondary d-flex align-items-center"
+                              id="btn-action" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fas fa-ellipsis-h me-1"></i> Ações
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Editar</a></li>
+                              <li><a class="dropdown-item" href="#">Arquivar</a></li>
+                              <li><a class="dropdown-item" href="#">Deletar</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="shadow-sm">
+                        <td class="align-middle">7</td>
+                        <td class="align-middle">17372</td>
+                        <td class="align-middle">Grampo P/grampeador</td>
+                        <td class="align-middle">Papelaria</td>
+                        <td class="align-middle"><span class="badge badge-primary text-primary">EM ESTOQUE</span></td>
+                        <td class="align-middle">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-secondary d-flex align-items-center"
+                              id="btn-action" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fas fa-ellipsis-h me-1"></i> Ações
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Editar</a></li>
+                              <li><a class="dropdown-item" href="#">Arquivar</a></li>
+                              <li><a class="dropdown-item" href="#">Deletar</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="shadow-sm">
+                        <td class="align-middle">8</td>
+                        <td class="align-middle">17319</td>
+                        <td class="align-middle">Marcador de Texto</td>
+                        <td class="align-middle">Papelaria</td>
+                        <td class="align-middle"><span class="badge badge-warning text-warning">ESTOQUE BAIXO</span>
+                        </td>
+                        <td class="align-middle">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-secondary d-flex align-items-center"
+                              id="btn-action" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fas fa-ellipsis-h me-1"></i> Ações
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Editar</a></li>
+                              <li><a class="dropdown-item" href="#">Arquivar</a></li>
+                              <li><a class="dropdown-item" href="#">Deletar</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- End table products -->
+
+              <!-- Observações -->
+              <div class="col-xl-5 col-lg-12 mt-sm-4">
+                <div class="card mb-5 shadow-sm border-0 shadow-hover">
+                  <div class="card-header bg-light border-0 pt-3 pb-0">
+                    <h6 class="mb-0">Observações</h6>
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex border-bottom py-3">
+                      <div class="w-100">
+                        <div class="d-flex">
+                          <p class="mb-0">Miguel Johnson</p>
+                          <small class="text-muted ms-auto">09:27 12/04/2021</small>
+                        </div>
+                        <small class="text-muted">Comprar caneta até às 14h</small>
+                      </div>
+                    </div>
+
+                    <div class="d-flex border-bottom py-3">
+                      <div class="w-100">
+                        <div class="d-flex">
+                          <p class="mb-0">Adriana Jones</p>
+                          <small class="text-muted ms-auto">10:27 10/04/2021</small>
+                        </div>
+                        <small class="text-muted">Relatório de vendas Relatorio.pdf</small>
+                      </div>
+                    </div>
+
+                    <div class="text-center pt-3">
+                      <a href="#"><small>Ver todas as observações</small></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Observações -->
+            </div>
+
+          </section>
+          <footer class="footer bg-light">
+            <div class="container text-center">
+              <span class="text-muted ">@maycon_yamamotto</span>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <!-- End Page Content -->
+    </div>
+    <!-- End wrapper -->
+
+    <!-- JQuery -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- JavaScript Bundle -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"></script>
+
+    <!-- Abrir / Fechar menu -->
+    <script>
+      $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#content-wrapper").toggleClass("toggled");
+      });
+    </script>
+
+    <!-- GeoChart  -->
+    <script type="text/javascript">
+      google.load('visualization', '1', {
+        'packages': ['geochart', 'table']
+      });
+      google.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          // State format must be "BR-**"
+          // US represents region, while the ** section represents the individual state 
+          ['State', 'Views'],
+          ['BR-AC', 8],
+          ['BR-AL', 34],
+          ['BR-AP', 23],
+          ['BR-AM', 12],
+          ['BR-BA', 38],
+          ['BR-CE', 82],
+          ['BR-DF', 31],
+          ['BR-ES', 34],
+          ['BR-GO', 120],
+          ['BR-MA', 12],
+          ['BR-MS', 83],
+          ['BR-MT', 12],
+          ['BR-MG', 87],
+          ['BR-PA', 12],
+          ['BR-PB', 29],
+          ['BR-PR', 144],
+          ['BR-PE', 32],
+          ['BR-PI', 25],
+          ['BR-RJ', 98],
+          ['BR-RN', 134],
+          ['BR-RS', 137],
+          ['BR-RO', 13],
+          ['BR-RR', 45],
+          ['BR-SC', 234],
+          ['BR-SP', 129],
+          ['BR-SE', 10],
+          ['BR-TO', 150],
+
+        ]);
+
+        var view = new google.visualization.DataView(data)
+        view.setColumns([0, 1])
+
+        var chart = new google.visualization.GeoChart(
+          document.getElementById('chart_div'));
+        chart.draw(data, options);
+
+        var geochart = new google.visualization.GeoChart(
+          document.getElementById('chart_div'));
+        var options = {
+          region: 'BR',
+          resolution: 'provinces',
+          height: 500,
+
+          colorAxis: {
+            colors: ['#E5F2FF', '#0D6EFD']
+          } // orange to blue 
+        };
+        geochart.draw(data, options);
+
+        $(window).resize(function () {
+          drawRegionsMap();
+        });
+      };
+    </script>
+
+    <!-- Chart Column -->
+    <script>
+      var ctx = document.getElementById('myChart').getContext('2d');
+
+      var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Caderno', 'lápis', 'Caneta', 'Bloco Adesivo', 'Estojo', 'Papel Sulfite 75g', 'Grampo P/grampeador', 'Marcador de Texto'],
+          datasets: [{
+            label: 'Produtos',
+            data: [149, 134, 109, 98, 83, 71, 64, 43],
+            backgroundColor: [
+              '#E5F2FF',
+            ],
+            borderColor: [
+              '#0D6EFD',
+            ],
+            borderWidth: 1,
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false
+        }
+      });
+    </script>
+
+  </body>
+
+</html>
