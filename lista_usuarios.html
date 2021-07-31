@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lista usuários | Quitanda</title>
+
+  <link rel="icon" type="image/png" href="assets/img/logo.svg" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+  <!-- Styles -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,700&display=swap" rel="stylesheet">
+
+  <!-- Ionic icons -->
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- Fontawesome icons -->
+  <script src="https://kit.fontawesome.com/38e3ad135e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="content-wrapper">
+
+    <!-- Start Sidebar -->
+    <div id="sidebar-container" class="bg-light border-end">
+      <div class="logo mx-auto">
+        <h4 class="font-weight-bold mb-0 text-center">QUITANDA</h4>
+      </div>
+
+      <div class="menu list-group-flush">
+        <h6 href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0 w-80">DASHBOARD
+        </h6>
+        <a href="#" class="list-group-item list-group-item-action text-muted p-3 border-0">
+          <i class="icon ion-md-stats lead me-2"></i> Estatísticas</a>
+        <a href="#" class="list-group-item list-group-item-action text-muted p-3 border-0">
+          <i class="icon ion-md-people lead me-2"></i> Lista de usuários</a>
+
+        <h6 href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">ESTOQUE
+        </h6>
+        <a href="#" class="list-group-item list-group-item-action text-muted p-3 border-0">
+          <i class="icon ion-md-cube lead me-2"></i> Gerenciamento de produtos</a>
+        <a href="#" class="list-group-item list-group-item-action text-muted p-3 border-0">
+          <i class="icon ion-md-cart lead me-2"></i> Produtos </a>
+
+        <h6 href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">VENDAS
+        </h6>
+        <a href="#" class="list-group-item list-group-item-action text-muted p-3 border-0">
+          <i class="icon ion-md-basket lead me-2"></i> Lista de vendas</a>
+
+
+        <h6 href="#" class="list-group-item list-group-item-action text-muted bg-light p-3 border-0">CONFIGURAÇÕES
+        </h6>
+        <a href="#" class="list-group-item list-group-item-action text-muted p-3 border-0">
+          <i class="icon ion-md-person lead me-2"></i> Perfil</a>
+      </div>
+    </div>
+    <!-- End sidebar -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper" class="w-100 bg-light-blue">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container-fluid">
+          <div id="button-sidebar">
+            <button class="btn btn-primary text-primary" id="menu-toggle"><span
+                class="navbar-toggler-icon"></span></button>
+          </div>
+
+          <div class="" id="navbarSupportedContent">
+            <ul class="nav ms-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-dark" href="">Maycon Yamamotto</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link text-dark" href="#">Sair</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="content" class="container-fluid p-3">
+        <section class="py-3">
+          <!-- Highlights -->
+          <div class="card mb-4 shadow-sm border-0 shadow-hover">
+            <div class="card-body d-flex ">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb m-0">
+                  <li class="breadcrumb-item"><a href="index.html">Quitanda</a></li>
+                  <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Lista de usuários</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+
+            <div class="card mb-4 shadow-sm border-0 shadow-hover">
+              <div class="card-body d-flex ">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Add</button>
+              
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                          </div>
+                          <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send message</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <!-- table products -->
+              <div class="col-xl-12 col-lg-12">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th colspan="col"><small class="font-weight-bold">ID<small></th>
+                        <th scope="col"><small class="font-weight-bold">Nome<small></th>
+                        <th scope="col"><small class="font-weight-bold">Email<small></th>
+                        <th scope="col"><small class="font-weight-bold">Nivel de acesso<small></th>
+                        <th scope="col"><small class="font-weight-bold">Cadastrado<small></th>
+                        <th scope="col"><small class="font-weight-bold">Status<small></th>
+                        <th scope="col"><small class="font-weight-bold">Ações<small></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="shadow-sm">
+                        <td class="align-middle">1</td>
+                        <td class="align-middle">Maycon</td>
+                        <td class="align-middle">mayconyamamotto54@gmail.com</td>
+                        <td class="align-middle">Administrador</td>
+                        <td class="align-middle">12/02/2019</td>
+                        <td class="align-middle"><span class="badge badge-primary text-primary">ATIVO</span></td>
+                        <td class="align-middle">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-secondary d-flex align-items-center"
+                              id="btn-action" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fas fa-ellipsis-h me-1"></i>
+                              Ações
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Editar</a></li>
+                              <li><a class="dropdown-item" href="#">Arquivar</a></li>
+                              <li><a class="dropdown-item" href="#">Deletar</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="shadow-sm">
+                        <td class="align-middle">2</td>
+                        <td class="align-middle">João</td>
+                        <td class="align-middle">joaozinho123@gmail.com</td>
+                        <td class="align-middle">Usuário</td>
+                        <td class="align-middle">12/04/2020</td>
+                        <td class="align-middle"><span class="badge badge-danger text-danger">DESATIVADO</span>
+                        </td>
+                        <td class="align-middle">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-secondary d-flex align-items-center"
+                              id="btn-action" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fas fa-ellipsis-h me-1"></i>
+                              Ações
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Editar</a></li>
+                              <li><a class="dropdown-item" href="#">Arquivar</a></li>
+                              <li><a class="dropdown-item" href="#">Deletar</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="shadow-sm">
+                        <td class="align-middle">3</td>
+                        <td class="align-middle">Paulo</td>
+                        <td class="align-middle">paulocesar@gmail.com</td>
+                        <td class="align-middle">Usuário</td>
+                        <td class="align-middle">23/01/2021</td>
+                        <td class="align-middle"><span class="badge badge-danger text-danger">DESATIVADO</span></td>
+                        <td class="align-middle">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-secondary d-flex align-items-center"
+                              id="btn-action" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fas fa-ellipsis-h me-1"></i>
+                              Ações
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Editar</a></li>
+                              <li><a class="dropdown-item" href="#">Arquivar</a></li>
+                              <li><a class="dropdown-item" href="#">Deletar</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="shadow-sm">
+                        <td class="align-middle">4</td>
+                        <td class="align-middle">Luisa</td>
+                        <td class="align-middle">luisamendonca@gmail.com</td>
+                        <td class="align-middle">Administrador</td>
+                        <td class="align-middle">29/08/2020</td>
+                        <td class="align-middle"><span class="badge badge-primary text-primary">ATIVO</span></td>
+                        <td class="align-middle">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-secondary d-flex align-items-center"
+                              id="btn-action" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fas fa-ellipsis-h me-1"></i> Ações
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Editar</a></li>
+                              <li><a class="dropdown-item" href="#">Arquivar</a></li>
+                              <li><a class="dropdown-item" href="#">Deletar</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="shadow-sm">
+                        <td class="align-middle">5</td>
+                        <td class="align-middle">Igor</td>
+                        <td class="align-middle">igor_soccerman@gmail.com</td>
+                        <td class="align-middle">Usuário</td>
+                        <td class="align-middle">09/11/2019</td>
+                        <td class="align-middle"><span class="badge badge-danger text-danger">DESATIVADO</span></td>
+                        <td class="align-middle">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-secondary d-flex align-items-center"
+                              id="btn-action" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fas fa-ellipsis-h me-1"></i> Ações
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Editar</a></li>
+                              <li><a class="dropdown-item" href="#">Arquivar</a></li>
+                              <li><a class="dropdown-item" href="#">Deletar</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="shadow-sm">
+                        <td class="align-middle">6</td>
+                        <td class="align-middle">Cristiely</td>
+                        <td class="align-middle">cristielantunes32@outlook.com</td>
+                        <td class="align-middle">Administrador</td>
+                        <td class="align-middle">21/06/2021</td>
+                        <td class="align-middle"><span class="badge badge-primary text-primary">ATIVO</span></td>
+                        </td>
+                        <td class="align-middle">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-secondary d-flex align-items-center"
+                              id="btn-action" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fas fa-ellipsis-h me-1"></i> Ações
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Editar</a></li>
+                              <li><a class="dropdown-item" href="#">Arquivar</a></li>
+                              <li><a class="dropdown-item" href="#">Deletar</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="shadow-sm">
+                        <td class="align-middle">7</td>
+                        <td class="align-middle">Joana</td>
+                        <td class="align-middle">joanamelim@gmail.com</td>
+                        <td class="align-middle">Usuário</td>
+                        <td class="align-middle">10/04/2020</td>
+                        <td class="align-middle"><span class="badge badge-primary text-primary">ATIVO</span></td>
+                        <td class="align-middle">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-secondary d-flex align-items-center"
+                              id="btn-action" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fas fa-ellipsis-h me-1"></i> Ações
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Editar</a></li>
+                              <li><a class="dropdown-item" href="#">Arquivar</a></li>
+                              <li><a class="dropdown-item" href="#">Deletar</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="shadow-sm">
+                        <td class="align-middle">8</td>
+                        <td class="align-middle">Gustavo</td>
+                        <td class="align-middle">gustavogoncalves@gmail.com</td>
+                        <td class="align-middle">Usuário</td>
+                        <td class="align-middle">18/05/2020</td>
+                        <td class="align-middle"><span class="badge badge-danger textdanger">DESATIVADO</span>
+                        </td>
+                        <td class="align-middle">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-secondary d-flex align-items-center"
+                              id="btn-action" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fas fa-ellipsis-h me-1"></i> Ações
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Editar</a></li>
+                              <li><a class="dropdown-item" href="#">Arquivar</a></li>
+                              <li><a class="dropdown-item" href="#">Deletar</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+  
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- End table products -->
+            </div>
+
+        </section>
+          </div>
+
+      </div>
+      <!-- JQuery -->
+      <script src="assets/js/jquery.js"></script>
+
+      <!-- JavaScript Bundle -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+      <!-- Abrir / Fechar menu -->
+      <script>
+        $("#menu-toggle").click(function (e) {
+          e.preventDefault();
+          $("#content-wrapper").toggleClass("toggled");
+        });
+      </script>
+
+</body>
+
+</html>
